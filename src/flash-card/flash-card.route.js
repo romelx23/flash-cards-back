@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const {
   getGames,
-  createFlashCards,
+  // createFlashCards,
   getFlashCards,
 } = require("./flash-card.controller");
 
@@ -11,6 +11,6 @@ router.get("/", [], getGames);
 
 router.get("/:id", [], getFlashCards);
 
-router.post("/", [], createFlashCards);
+// router.post("/", [], createFlashCards);
 
 module.exports = router;
